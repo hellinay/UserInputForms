@@ -1,5 +1,4 @@
-import { findAllByDisplayValue } from "@testing-library/react";
-import { useRef, useState } from "react";
+
 import React, { useEffect } from "react";
 import useInput  from "../hooks/use-input";
 
@@ -80,7 +79,6 @@ const SimpleInput = (props) => {
       <div className={eMailInputClasses}>
         <label htmlFor="email">Your E-mail</label>
         <input
-          ref={eMailInputRef}
           type="text"
           id="email"
           onChange={emailChangeHandler}
